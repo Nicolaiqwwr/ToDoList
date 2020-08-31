@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ToDo</title>
+  <link href='CSS-Style.css' rel="stylesheet" type='text/css'>
+  <script defer src='todoJS.js' ></script>
+</head>
+
+<body>
+
+  <form>
+    <input type='text' id='inp' size="3">
+    <button id='clicElem'>Сохранить дело</button>
+    <button id='clecDo'>Удалить</button>
+  </form>
+  <hr>
+  <p class='title'>Дела на сегодня</p>
+  <p class='title2'>Завершоные дела</p>
+  <form>
+    <div id='showDo' class="left"></div>
+
+
+    <div id='showReadyDo' class="rights"></div>
+
+  </form>
+  <div id='footer'>
+    <button id='finishDo'>Завеоршить все дела</button>
+    <button id='finishReadyDo'>Очистить список готовых дел</button>
+  </div>
+
+</body>
+</html>
