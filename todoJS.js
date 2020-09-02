@@ -128,7 +128,7 @@ function noReadyDo() {
 function outDo() {
   let showDo = '';
   for (let key in listDo) {
-    showDo += '<label><input type="checkbox" class="flagNoReadyDo" onclick="readyDo()">';
+    showDo += '<label><input title="Нажми для завершения дела" type="checkbox" class="flagNoReadyDo" onclick="readyDo()">';
     showDo += listDo[key].do + '<br></label>';
   }
 
@@ -139,7 +139,7 @@ function outDo() {
 function outReadyDo() {
   let showReadyDo = '';
   for (let key in listReadyDo) {
-    showReadyDo += '<label><input type="checkbox" checked class="flagReadyDo" onclick="noReadyDo()">';
+    showReadyDo += '<label><input title="Нажми для возвращения дела дела" type="checkbox" checked class="flagReadyDo" onclick="noReadyDo()">';
     showReadyDo += listReadyDo[key].do + '<br></label>';
   }
 
